@@ -13,12 +13,17 @@ class MockModel:
         return 1
 
     def predictions(self, images):
-        lower_bound = self.bounds()[0]
-        upper_bound = self.bounds()[1]
+        lower_bound = 0
+        upper_bound = self.num_classes()
         return np.random.randint(lower_bound, upper_bound)
 
     def bounds(self):
         return (0, 255)
+
+    def num_classes(self):
+        # Assuming TinyImagenet
+        return 200
+
 
 
 def create_mock_model():
