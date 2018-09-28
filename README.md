@@ -3,6 +3,8 @@
 To get started, please simply fork this GitLab repository and
 follow the structure, testing and submissions guidelines below.
 
+:warning: This is a template and cannot be submitted as is. Please replace the contained dummy model with a real model trained by you, before doing any submissions.
+
 # Repository Structure
 
 ### Define your dependencies
