@@ -1,2 +1,5 @@
+numpy
+tensorflow-gpu==1.8.0
 foolbox==1.1.0
-git+https://github.com/bethgelab/adversarial-vision-challenge
+adversarial-vision-challenge
+

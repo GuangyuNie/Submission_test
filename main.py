@@ -1,19 +1,12 @@
+from adv_gen import create_fmodel
 from adversarial_vision_challenge import model_server
-from model import create_mock_model
+import numpy as np
+import tensorflow as tf
+
 
 
 if __name__ == '__main__':
-    '''
-        Load your own model here.
+	fmodel = create_fmodel()
+	model_server(fmodel)
 
 
-        Normally you would load a persisted model using your library of choice
-        and wrap it into a foolbox model. E.g. for PyTorch:
-
-        model = YourModel(...)
-        model.load_state_dict(torch.load('/path/to/your/model'))
-        foolbox.models.PyTorchModel(model, ...)
-
-    '''
-    foolbox_model = create_mock_model()
-    model_server(foolbox_model)
