@@ -1,5 +1,5 @@
 numpy
-tensorflow-gpu==1.8.0
+tensorflow-gpu==1.15.2
 foolbox==1.1.0
 adversarial-vision-challenge
 
